@@ -2,6 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 
 import prisma from '@WhizWire/libs/prismadb';
 import serverAuth from "@WhizWire/libs/serverAuth";
+import { Strings } from "@WhizWire/libs/strings/en";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'POST' && req.method !== 'DELETE') {
@@ -43,7 +44,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         if (post?.userId) {
           await prisma.notification.create({
             data: {
-              body: 'Someone liked your tweet!',
+              body: Strings.LIKED_NOTIFICATION,
               userId: post.userId
             }
           });

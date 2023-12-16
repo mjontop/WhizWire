@@ -2,6 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 
 import serverAuth from "@WhizWire/libs/serverAuth";
 import prisma from "@WhizWire/libs/prismadb";
+import { Strings } from "@WhizWire/libs/strings/en";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'POST') {
@@ -36,7 +37,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       if (post?.userId) {
         await prisma.notification.create({
           data: {
-            body: 'Someone replied on your tweet!',
+            body: Strings.WELCOME_TO_WHISPER,
             userId: post.userId
           }
         });

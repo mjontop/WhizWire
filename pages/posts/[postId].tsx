@@ -7,6 +7,7 @@ import Header from "@WhizWire/components/Header";
 import Form from "@WhizWire/components/Form";
 import PostItem from "@WhizWire/components/posts/PostItem";
 import CommentFeed from "@WhizWire/components/posts/CommentFeed";
+import { Strings } from "@WhizWire/libs/strings/en";
 
 
 const PostView = () => {
@@ -25,9 +26,9 @@ const PostView = () => {
 
   return ( 
     <>
-      <Header showBackArrow label="Tweet" />
+      <Header showBackArrow label={Strings.WHISPER} />
       <PostItem data={fetchedPost} />
-      <Form postId={postId as string} isComment placeholder="Tweet your reply" />
+      <Form postId={postId as string} isComment placeholder={Strings.REPLY_WHISPER} />
       <CommentFeed comments={fetchedPost?.comments} />
     </>
    );

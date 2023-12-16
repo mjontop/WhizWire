@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 
 import useLoginModal from "@WhizWire/hooks/useLoginModal";
 import useCurrentUser from "@WhizWire/hooks/useCurrentUser";
+import { Strings } from "@WhizWire/libs/strings/en";
 
 const SidebarTweetButton = () => {
   const router = useRouter();
@@ -57,7 +58,7 @@ const SidebarTweetButton = () => {
             text-white 
             text-[20px]
         ">
-          Tweet
+         {Strings.WHISPER}
         </p>
       </div>
     </div>

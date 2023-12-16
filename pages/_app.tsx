@@ -1,14 +1,16 @@
-import type { AppProps } from 'next/app'
-import { Toaster } from 'react-hot-toast';
-import { SessionProvider } from 'next-auth/react';
+import type { AppProps } from "next/app";
+import { Toaster } from "react-hot-toast";
+import { SessionProvider } from "next-auth/react";
 
-import Layout from '@WhizWire/components/Layout'
-import LoginModal from '@WhizWire/components/modals/LoginModal'
-import RegisterModal from '@WhizWire/components/modals/RegisterModal'
-import '@WhizWire/styles/globals.css'
-import EditModal from '@WhizWire/components/modals/EditModal';
+import Layout from "@WhizWire/components/Layout";
+import LoginModal from "@WhizWire/components/modals/LoginModal";
+import RegisterModal from "@WhizWire/components/modals/RegisterModal";
+import "@WhizWire/styles/globals.css";
+import EditModal from "@WhizWire/components/modals/EditModal";
+import { useEffect } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
+ 
   return (
     <SessionProvider session={pageProps.session}>
       <Toaster />
@@ -19,5 +21,5 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </Layout>
     </SessionProvider>
-  )
+  );
 }

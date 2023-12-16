@@ -1,8 +1,8 @@
-import { NextApiRequest, NextApiResponse } from 'next';
+import { NextApiRequest, NextApiResponse } from "next";
 
-import prisma from '@WhizWire/libs/prismadb';
-import { authOptions } from '@WhizWire/pages/api/auth/[...nextauth]';
-import { getServerSession } from 'next-auth';
+import prisma from "@WhizWire/libs/prismadb";
+import { authOptions } from "@WhizWire/pages/api/auth/[...nextauth]";
+import { getServerSession } from "next-auth";
 
 const serverAuth = async (req: NextApiRequest, res: NextApiResponse) => {
   const session = await getServerSession(req, res, authOptions);

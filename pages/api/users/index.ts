@@ -11,9 +11,10 @@ export default async function handler(
     return res.status(405).end();
   }
 
-  const { currentUser } = await serverAuth(req, res);
 
   try {
+   const { currentUser } = await serverAuth(req, res);
+
     const users = await prisma.user.findMany({
       orderBy: {
         createdAt: "desc",

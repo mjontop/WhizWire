@@ -1,12 +1,12 @@
 import { useRouter } from "next/router";
 import { ClipLoader } from "react-spinners";
 
-import useUser from "@/hooks/useUser";
+import useUser from "@WhizWire/hooks/useUser";
 
-import PostFeed from "@/components/posts/PostFeed";
-import Header from "@/components/Header";
-import UserBio from "@/components/users/UserBio";
-import UserHero from "@/components/users/UserHero";
+import PostFeed from "@WhizWire/components/posts/PostFeed";
+import Header from "@WhizWire/components/Header";
+import UserBio from "@WhizWire/components/users/UserBio";
+import UserHero from "@WhizWire/components/users/UserHero";
 
 
 

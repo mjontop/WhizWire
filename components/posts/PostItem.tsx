@@ -3,9 +3,9 @@ import { useCallback, useMemo } from 'react';
 import { AiFillHeart, AiOutlineHeart, AiOutlineMessage } from 'react-icons/ai';
 import { formatDistanceToNowStrict } from 'date-fns';
 
-import useLoginModal from '@/hooks/useLoginModal';
-import useCurrentUser from '@/hooks/useCurrentUser';
-import useLike from '@/hooks/useLike';
+import useLoginModal from '@WhizWire/hooks/useLoginModal';
+import useCurrentUser from '@WhizWire/hooks/useCurrentUser';
+import useLike from '@WhizWire/hooks/useLike';
 
 import Avatar from '../Avatar';
 interface PostItemProps {

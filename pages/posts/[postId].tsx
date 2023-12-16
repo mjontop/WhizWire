@@ -1,12 +1,12 @@
 import { useRouter } from "next/router";
 import { ClipLoader } from "react-spinners";
 
-import usePost from "@/hooks/usePost";
+import usePost from "@WhizWire/hooks/usePost";
 
-import Header from "@/components/Header";
-import Form from "@/components/Form";
-import PostItem from "@/components/posts/PostItem";
-import CommentFeed from "@/components/posts/CommentFeed";
+import Header from "@WhizWire/components/Header";
+import Form from "@WhizWire/components/Form";
+import PostItem from "@WhizWire/components/posts/PostItem";
+import CommentFeed from "@WhizWire/components/posts/CommentFeed";
 
 
 const PostView = () => {

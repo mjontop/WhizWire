@@ -1,4 +1,4 @@
-import usePosts from '@/hooks/usePosts';
+import usePosts from '@WhizWire/hooks/usePosts';
 
 import PostItem from './PostItem';
 

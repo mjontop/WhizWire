@@ -1,4 +1,4 @@
-import useUsers from '@/hooks/useUsers';
+import useUsers from '@WhizWire/hooks/useUsers';
 
 import Avatar from '../Avatar';
 

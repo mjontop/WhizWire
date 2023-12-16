@@ -2,8 +2,8 @@ import { useCallback } from "react";
 import { FaFeather } from "react-icons/fa";
 import { useRouter } from "next/router";
 
-import useLoginModal from "@/hooks/useLoginModal";
-import useCurrentUser from "@/hooks/useCurrentUser";
+import useLoginModal from "@WhizWire/hooks/useLoginModal";
+import useCurrentUser from "@WhizWire/hooks/useCurrentUser";
 
 const SidebarTweetButton = () => {
   const router = useRouter();

@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 
-import serverAuth from "@/libs/serverAuth";
-import prisma from "@/libs/prismadb";
+import serverAuth from "@WhizWire/libs/serverAuth";
+import prisma from "@WhizWire/libs/prismadb";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'PATCH') {

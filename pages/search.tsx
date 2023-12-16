@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import Header from "@WhizWire/components/Header";
 
 const Search = () => {
   return ( 

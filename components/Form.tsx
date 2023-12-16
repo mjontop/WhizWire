@@ -2,11 +2,11 @@ import axios from 'axios';
 import { useCallback, useState } from 'react';
 import { toast } from 'react-hot-toast';
 
-import useLoginModal from '@/hooks/useLoginModal';
-import useRegisterModal from '@/hooks/useRegisterModal';
-import useCurrentUser from '@/hooks/useCurrentUser';
-import usePosts from '@/hooks/usePosts';
-import usePost from '@/hooks/usePost';
+import useLoginModal from '@WhizWire/hooks/useLoginModal';
+import useRegisterModal from '@WhizWire/hooks/useRegisterModal';
+import useCurrentUser from '@WhizWire/hooks/useCurrentUser';
+import usePosts from '@WhizWire/hooks/usePosts';
+import usePost from '@WhizWire/hooks/usePost';
 
 import Avatar from './Avatar';
 import Button from './Button';

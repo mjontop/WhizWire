@@ -37,7 +37,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       if (post?.userId) {
         await prisma.notification.create({
           data: {
-            body: Strings.WELCOME_TO_WHISPER,
+            body: `@${currentUser.username} ${Strings.REPLY_WHISPER}`,
             userId: post.userId
           }
         });

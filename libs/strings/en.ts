@@ -3,7 +3,8 @@ export const Strings = {
   WHISPER: "Whisper",
   WHISPHER_RELESED: 'Whisper Released',
   WELCOME_TO_WHISPER: 'Welcome to Whiz Wire',
-  REPLIED_NOTIFICAION : 'Someone replied on your Whisper!',
-  LIKED_NOTIFICATION: 'Someone liked your tweet!',
+  REPLIED_NOTIFICAION : 'replied on your Whisper!',
+  FOLLOWED_YOU: 'followed you!',
+  LIKED_NOTIFICATION: 'liked your tweet!',
   REPLY_WHISPER: "Reply to Whisper"
 };
